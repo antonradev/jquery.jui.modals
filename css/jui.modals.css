@@ -1,0 +1,87 @@
+.jui-checkboxes-container {
+    margin: 10px auto;
+    width: 700px;
+}
+
+
+.jui-modal {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    right: 35%;
+    border: 1px #aaa solid;
+    background-color: #fff;
+    font-size: .9em;
+}
+.jui-modal.slideFromTop {
+    -webkit-animation: slideFromTop .5s;
+    -moz-animation: slideFromTop .5s;
+    animation: slideFromTop .5s;
+}
+
+@-moz-keyframes slideFromTop {
+    from { opacity: 0; top: -20% }
+to { opacity: 1; top: 20% }
+}
+@-webkit-keyframes slideFromTop {
+    from { opacity: 0; top: -20% }
+to { opacity: 1; top: 20% }
+}
+@keyframes slideFromTop {
+    from { opacity: 0; top: -20% }
+to { opacity: 1; top: 20% }
+}
+
+
+.jui-modal.slideFromTop.close {
+    -webkit-animation-name: slideToTop;
+    -webkit-animation-duration: .5s;
+    -moz-animation-name: slideToTop;
+    -moz-animation-duration: .5s;
+    animation-name: slideToTop;
+    animation-duration: .5s;
+
+}
+@-moz-keyframes slideToTop {
+    from { opacity: 1; top: 20% }
+to { opacity: 0; top: -20% }
+}
+@-webkit-keyframes slideToTop {
+    from { opacity: 1; top: 20% }
+to { opacity: 0; top: -20% }
+}
+@keyframes slideToTop {
+    from { opacity: 1; top: 20% }
+to { opacity: 0; top: -20% }
+}
+
+
+
+
+
+.jui-modal .modal-close {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    cursor: pointer;
+    font-size: 1.7em;
+}
+.jui-modal h3 {
+    padding: 5px 20px;
+    padding-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.jui-modal-content {
+    padding: 20px;
+}
+.jui-modal-actions {
+    background-color: #f9f9f9;
+    padding: 8px 16px;
+    text-align: right;
+}
+
+.jui-modal.big-size {
+    left: 20%;
+    right: 20%;
+}

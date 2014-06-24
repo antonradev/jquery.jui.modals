@@ -1,0 +1,40 @@
+{
+    "name": "jui.modals",
+    "title": "jQuery JUI Modals",
+    "description": "Creates modal dialog windows for web pages",
+    "keywords": [
+        "modals",
+        "dialogs",
+        "modal",
+        "dialog"
+    ],
+    "version": "0.1.0",
+    "author": {
+        "name": "Anton Radev",
+        "email": "anton.radev@gmail.com",
+        "url": "https://github.com/antonradev"
+    },
+    "maintainers": [
+    {
+        "name": "Anton Radev",
+        "email": "anton.radev@gmail.com",
+        "url": "http://antonradev.com"
+    }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">1"
+    },
+    "bugs": "https://github.com/antonradev/jquery.jui.modals/issues",
+    "homepage": "http://jui.uxpd.net/modals.html",
+    "docs": "https://github.com/antonradev/jquery.jui.modals",
+    "download": "https://github.com/antonradev/jquery.jui.modals",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}

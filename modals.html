@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery JUI Modals - Modal dialog windows for web pages</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+        <link rel="stylesheet" type="text/css" media="all" href="css/jui.modals.css">
+        <style type="text/css">
+            .modals-demo-container a {
+                font-size: .9em; font-family: 'Open Sans', sans-serif;
+            }
+        </style>
+    </head>
+
+
+
+    <body>
+
+        <h1 class="jui-main-heading"><a href="http://jui.uxpd.net">jQuery JUI</a></h1>
+
+        <h2 class="jui-tabs-demo-heading">jQuery JUI Modals - Demo page</h2>
+
+        <div class="plugin-info">
+            <a href="http://plugins.jquery.com/jui.modals/" rel="nofollow external" target="_blank">http://plugins.jquery.com/jui.modals/</a>
+            <br>
+            <a href="https://github.com/antonradev/jquery.jui.modals" rel="nofollow external" target="_blank">https://github.com/antonradev/jquery.jui.modals</a>
+        </div>
+
+
+        <div class="modals-demo-container jui-checkboxes-container">
+            <h4>Checkboxes only without any labels</h4>
+            <a id="modalDefault" href="#">Open Default Modal...</a>
+            <p>
+                <a id="modalSliding" href="#">Open Sliding Modal...</a>
+            </p>
+            <p>
+                <a id="modalDefaultBig" href="#">Open Big Default Modal...</a>
+            </p>
+            <p>
+                <a id="modalSlidingBig" href="#">Open Big Sliding Modal...</a>
+            </p>
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.jui.modals.js"></script>
+        <script type="text/javascript">
+
+            // Initializing JUI Modals plugin
+            $("#modalDefault").juimodals({
+                modalTitle: 'Thank you for opening me!',
+                modalTextContent: 'This is just some text content in the modal window',
+                appearType: "default",
+                modalType: "basic"
+            });
+            $("#modalSliding").juimodals({
+                modalTitle: 'Thank you for opening me!',
+                modalTextContent: 'I can slide from top to my position. This is just some text content in the modal window',
+                appearType: "slideFromTop",
+                modalType: "slide"
+            });
+            $("#modalDefaultBig").juimodals({
+                modalTitle: 'Thank you for opening me!',
+                modalTextContent: "I can slide from top to my position. This is just some text content in the modal window. I can slide from top to my position. This is just some text content in the modal window. I can slide from top to my position. This is just some text content in the modal window. <br><br> I can slide from top to my position. This is just some text content in the modal window. I can slide from top to my position. This is just some text content in the modal window. I can slide from top to my position.",
+                appearType: "default",
+                modalType: "basic",
+                modalSize: "big-size"
+            });
+            $("#modalSlidingBig").juimodals({
+                modalTitle: 'Thank you for opening me!',
+                modalTextContent: 'I can slide from top to my position. This is just some text content in the modal window. I can slide from top to my position. This is just some text content in the modal window. I can slide from top to my position. This is just some text content in the modal window. <br><br> I can slide from top to my position. This is just some text content in the modal window',
+                appearType: "slideFromTop",
+                modalType: "slide",
+                modalSize: "big-size"
+            });
+
+        </script>
+    </body>
+</html>
